@@ -1,0 +1,13 @@
+whenever we hit a threshold, we should get the notification/alarm if created
+
+ *Cloudwatch
+   Alarm
+    create alarm
+     select metrics (eg. EBS) = select service (eg. EC2)
+      select preinstance metrics
+     >static
+     >greater than
+              next
+    in alarm
+    create new sns topic/ or use existing 
+                        save
