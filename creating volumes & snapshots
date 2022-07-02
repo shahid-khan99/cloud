@@ -1,0 +1,16 @@
+    **volumes**
+*EC2 instances*
+ Elastic block store
+ volumes
+create vol.
+after that attach the vol. to the instance.
+
+    **snapshots**
+* open EC2 instances
+   select the instance. (whose volume's snapshot to be taken)
+   copy the volume id
+ go to snapshots
+    create snapshot
+    name:   , paste the volume id
+    create
+ or go to volume > select vol. > actions > create snapshot from vol.
