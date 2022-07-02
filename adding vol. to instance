@@ -1,0 +1,21 @@
+after the volume is created 
+  attach the vol. to the instance (actions)
+ take control
+to check
+$ lsblk
+to check if vol. is raw
+$ sudo file -s /dev/xvdf
+to format the disk
+$ sudo mkfs -t ext4 /dev/xvdf
+check again  $ sudo file -s /dev/xvdf
+ # create mount point for the disk
+ $ sudo mkdir </fileserver>
+now mount the disk
+$ sudo mount /dev/xvdf /fileserver/
+check $ lsblk
+to go in drive $ cd /fileserver
+to unmount the disk
+$ sudo umount /dev/xvdf /fileserver
+check $ lsblk
+deattach the vol. from instance
+ 
