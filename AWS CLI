@@ -1,0 +1,13 @@
+** accessing AWS through terminal **
+
+connect instance to terminal
+ take control
+ $ sudo apt update
+ $ sudo apt install awscli
+ $ aws help = q to exit
+ $ aws s3 ls
+ $ aws s3 ls <bucketname>
+To copy file from terminal to s3 bucket
+ $ aws s3 cp <filename> s3://<bucketname>
+To copy file from s3 bucket to terminal
+ $ aws s3 cp s3://<bucketname>/<filename> ~
