@@ -1,0 +1,15 @@
+    **AMI-image**
+select the instance 
+ actions
+  image and template
+   create image
+we can open new instances with this image by 2 methods 
+  1) while launching instance
+     my amis = select the ami
+  2) Go in ami images
+      select the image and launch new instance
+
+when we need to launch many instances with common/same configurations
+  we make an ami image by doing all the common configurations in the
+    terminal of an instance, then we take ami image to launch other instances
+      using that ami image
