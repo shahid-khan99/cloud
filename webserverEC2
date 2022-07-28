@@ -1,0 +1,23 @@
+************************
+Installing web server on EC2
+************************
+start an EC2 instance 
+in security group select ssh and HTTP
+launch the instance 
+take control
+
+update the server
+$ sudo apt update
+
+install apache2
+$ sudo apt install apche2
+
+edit index.html
+cd /var/www/html
+
+start the webserver
+$ sudo service apache2 start
+Verify whether service started or not
+$ service apache2 status
+
+go to browser and enter the public ip
