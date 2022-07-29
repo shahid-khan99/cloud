@@ -29,7 +29,9 @@ $ wget https://s3.amazonaws.com/amazoncloudwatch-agent/ubuntu/amd64/latest/amazo
 ## Configure the CloudWatch agent
 $ sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-config-wizard
 >> CollectD - no
+log = /var/log/systat
 >> SSM - no
+
 
 ## Start the CloudWatch agent
 $ sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -s -c file:/opt/aws/amazon-cloudwatch-agent/bin/config.json
